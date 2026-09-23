@@ -2027,3 +2027,17 @@ a:focus-visible {
     margin-top: 0;
   }
 }
+
+@media (min-width: 900px) {
+  .timeline-heading {
+    row-gap: 0;
+  }
+
+  .timeline-heading .eyebrow {
+    margin-bottom: 40px;
+  }
+
+  .timeline-heading h2 {
+    margin-bottom: 14px;
+  }
+}

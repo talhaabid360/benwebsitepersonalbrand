@@ -402,7 +402,7 @@ function App() {
               <br />
               And beyond the headlines.
             </h2>
-            <p>From an accelerated education to award-winning broadcasting,<br />independent media and public controversy.</p>
+            <p>From an accelerated education to award-winning broadcasting, independent media and public controversy.</p>
           </div>
 
           <div className="timeline-desktop shell">

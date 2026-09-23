@@ -234,9 +234,21 @@ function App() {
         <div className="intro-loader__panel intro-loader__panel--left" />
         <div className="intro-loader__panel intro-loader__panel--right" />
         <div className="intro-loader__mark">
-          <img src="/media/ben-swann-signature.webp" alt="" />
-          <span>Journalist · Broadcaster · Founder</span>
-        </div>
+          <img
+            src="/media/ben-swann-signature.webp"
+            alt=""
+            fetchPriority="high"
+            decoding="sync"
+          />
+
+          <div className="intro-loader__progress" aria-hidden="true">
+            <span />
+          </div>
+
+          <span className="intro-loader__tagline">
+            Journalist · Broadcaster · Founder
+          </span>
+       </div>
       </div>
 
       <header className={`site-header ${headerSolid ? "site-header--solid" : ""}`}>

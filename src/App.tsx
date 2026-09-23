@@ -552,7 +552,11 @@ function App() {
           <div className="watch-grid shell">
             <div className="watch-copy" data-reveal>
               <p className="eyebrow">04 — Watch Ben Swann</p>
-              <h2>The story continues in real time.</h2>
+              <h2>
+                <span>The story</span>{" "}
+                <span>continues</span>{" "}
+                <span>in real time.</span>
+              </h2>
               <p>
                 Reporting, investigations, analysis and conversations from Ben
                 Swann’s official YouTube channel.

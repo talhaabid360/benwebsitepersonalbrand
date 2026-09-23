@@ -363,7 +363,7 @@ function App() {
           <div className="facts" data-reveal>
             <article>
               <span>01</span>
-              <strong>Two degrees <br> by the age of 16</strong>
+              <strong>Two degrees <br /> by the age of 16</strong>
               <p>Early academic discipline shaped a research-led career.</p>
             </article>
             <article>

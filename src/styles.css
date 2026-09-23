@@ -523,7 +523,7 @@ a:focus-visible {
   gap: 10px;
   min-height: 44px;
   margin-top: 34px;
-  border-bottom: 1px solid rgba(5, 5, 5, 0.38);
+  border-bottom: 1px solid rgba(--ink);
   font-size: 0.74rem;
   font-weight: 800;
   letter-spacing: 0.14em;

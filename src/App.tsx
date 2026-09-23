@@ -405,7 +405,7 @@ function App() {
             <div className="timeline-line" aria-hidden="true">
               <span className="timeline-line__fill" />
             </div>
-            {timeline.map((entry, index) => (
+            {timeline.slice(0, 5).map((entry, index) => (
               <article
                 className={`timeline-card ${index % 2 ? "timeline-card--right" : "timeline-card--left"}`}
                 key={`${entry.year}-${entry.title}`}
@@ -441,7 +441,11 @@ function App() {
               </article>
             ))}
           </div>
-
+         <div className="timeline-more shell">
+            <a className="timeline-more__button" href="/timeline">
+              See full timeline <ArrowRight aria-hidden="true" />
+            </a>
+          </div>
           <div className="timeline-mobile" data-overflow-allowed>
             <div className="timeline-mobile__controls shell">
               <span>

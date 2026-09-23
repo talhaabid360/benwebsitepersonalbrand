@@ -737,7 +737,9 @@ a:focus-visible {
 }
 
 .timeline-heading h2 {
-  max-width: 15ch;
+  /* max-width: 15ch; */
+  width: 100%;
+  max-width: none;
   font-size: clamp(5rem, 9.4vw, 11rem);
   line-height: 0.8;
 }

@@ -676,7 +676,9 @@ a:focus-visible {
 }
 
 .press-heading h2 {
-  max-width: 13ch;
+  /* max-width: 13ch; */
+  width: 100%;
+  max-width: none;
   font-size: clamp(4.1rem, 8vw, 9.5rem);
   line-height: 0.82;
 }

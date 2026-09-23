@@ -340,8 +340,8 @@ function App() {
               </h2>
               <p className="story-lede">
                 For more than two decades, Ben Swann has moved through local
-                newsrooms, national broadcasts and independent media—building a
-                career shaped by investigation, disruption and controversy.
+                newsrooms, national broadcasts, and independent media, building a
+                career defined by investigation, independence, and a willingness to challenge the prevailing narrative.
               </p>
               <a className="text-link" href="#timeline">
                 Follow the full timeline <ArrowDown aria-hidden="true" />

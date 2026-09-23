@@ -335,8 +335,8 @@ function App() {
             <div className="story-copy" data-reveal>
               <p className="eyebrow">01 — The story</p>
               <h2>
-                From El Paso youth pastor to Russian foreign agent: the story of
-                a controversial independent journalist.
+                FROM NEWSROOMS TO INDEPENDENT MEDIA: A CAREER BUILT
+                ON ASKING THE QUESTIONS OTHERS WOULDN’T. 
               </h2>
               <p className="story-lede">
                 For more than two decades, Ben Swann has moved through local

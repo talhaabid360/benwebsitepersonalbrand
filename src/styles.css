@@ -2096,3 +2096,16 @@ a:focus-visible {
   }
 }
 
+
+@media (min-width: 900px) {
+  .watch-copy h2 {
+    width: 100%;
+    max-width: none;
+    font-size: clamp(4rem, 6vw, 7rem);
+  }
+
+  .watch-copy h2 span {
+    display: block;
+    white-space: nowrap;
+  }
+}

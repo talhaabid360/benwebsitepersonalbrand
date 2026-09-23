@@ -2010,3 +2010,10 @@ a:focus-visible {
     max-width: none;
   }
 }
+
+@media (min-width: 900px) {
+  .timeline-heading > p:last-child {
+    max-width: none;
+    white-space: nowrap;
+  }
+}

@@ -33,7 +33,7 @@ function App() {
     ).matches;
     const timer = window.setTimeout(
       () => setIntroComplete(true),
-      reduceMotion ? 60 : 1050,
+      reduceMotion ? 60 : 1600,
     );
     return () => window.clearTimeout(timer);
   }, []);

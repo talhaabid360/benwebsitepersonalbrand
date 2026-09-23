@@ -60,9 +60,7 @@ function TimelinePage() {
             </h2>
 
             <p>
-              From an accelerated education to award-winning broadcasting,
-              <br />
-              independent media and public controversy.
+              From an accelerated education to award-winning broadcasting, independent media and public controversy.
             </p>
           </div>
 

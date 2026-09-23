@@ -56,9 +56,7 @@ function TimelinePage() {
             <h2>
               A life behind
               <br />
-              And beyond
-              <br />
-              the headlines.
+              And beyond the headlines.
             </h2>
 
             <p>

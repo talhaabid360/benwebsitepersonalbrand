@@ -2020,7 +2020,7 @@ a:focus-visible {
 
 @media (min-width: 900px) {
   .timeline-heading h2 {
-    margin-bottom: 12px;
+    margin-bottom: 5px;
   }
 
   .timeline-heading > p:last-child {

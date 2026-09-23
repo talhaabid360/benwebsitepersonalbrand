@@ -2041,3 +2041,10 @@ a:focus-visible {
     margin-bottom: 14px;
   }
 }
+
+.closing-copy h2 {
+  width: 100%;
+  max-width: none;
+  white-space: nowrap;
+}
+

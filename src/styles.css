@@ -1265,6 +1265,163 @@ a:focus-visible {
   width: 15px;
 }
 
+
+/* Desktop: See full timeline button */
+
+.timeline-more {
+  display: flex;
+  justify-content: center;
+  padding: clamp(32px, 5vw, 72px) 0 clamp(84px, 10vw, 150px);
+}
+
+.timeline-more__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 58px;
+  padding: 0 30px;
+  border: 2px solid var(--gold);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--gold);
+  font-family: var(--display);
+  font-size: 1.35rem;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  transition:
+    background-color 220ms var(--ease-out),
+    color 220ms var(--ease-out),
+    box-shadow 220ms var(--ease-out),
+    transform 220ms var(--ease-out);
+}
+
+.timeline-more__button svg {
+  width: 19px;
+}
+
+/* Full timeline page */
+
+.timeline-page__header {
+  border-color: transparent;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 5, 5, 0.72),
+    transparent
+  );
+}
+
+.timeline-page__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 44px;
+  color: var(--paper);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.timeline-page__back svg {
+  width: 18px;
+}
+
+.timeline-page__hero {
+  position: relative;
+  display: grid;
+  min-height: 100svh;
+  overflow: hidden;
+  place-items: center;
+}
+
+.timeline-page__hero-image,
+.timeline-page__hero-shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.timeline-page__hero-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.timeline-page__hero-shade {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.42),
+    rgba(0, 0, 0, 0.58)
+  );
+}
+
+.timeline-page__hero h1 {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  color: var(--gold);
+  font-family: var(--display);
+  font-size: clamp(7rem, 15vw, 17rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 0.78;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.timeline-page__scroll {
+  position: absolute;
+  z-index: 2;
+  bottom: 30px;
+  left: 50%;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--paper);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+}
+
+.timeline-page__scroll svg {
+  width: 20px;
+  color: var(--gold);
+}
+
+.timeline-page__record {
+  scroll-margin-top: 72px;
+}
+
+/* Bright desktop hover */
+
+@media (hover: hover) and (pointer: fine) {
+  .timeline-more__button:hover {
+    background: var(--gold);
+    color: var(--ink);
+    box-shadow: 0 0 34px rgba(243, 214, 107, 0.62);
+    transform: translateY(-3px);
+  }
+
+  .timeline-page__back:hover {
+    color: var(--gold);
+  }
+}
+
+/* Keep the new homepage button desktop-only */
+
+@media (max-width: 899px) {
+  .timeline-more {
+    display: none;
+  }
+}
+
+
+
+
 @media (hover: hover) and (pointer: fine) {
   .desktop-nav a:hover {
     color: #fff;

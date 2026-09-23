@@ -2017,3 +2017,13 @@ a:focus-visible {
     white-space: nowrap;
   }
 }
+
+@media (min-width: 900px) {
+  .timeline-heading h2 {
+    margin-bottom: 24px;
+  }
+
+  .timeline-heading > p:last-child {
+    margin-top: 0;
+  }
+}

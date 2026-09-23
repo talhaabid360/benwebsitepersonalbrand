@@ -397,7 +397,11 @@ function App() {
         <section className="timeline-section" id="timeline">
           <div className="timeline-heading shell" data-reveal>
             <p className="eyebrow">02 — The record</p>
-            <h2>A life behind<br />And beyond<br />the headlines.</h2>
+            <h2>
+              A life behind
+              <br />
+              And beyond the headlines.
+            </h2>
             <p>From an accelerated education to award-winning broadcasting,<br />independent media and public controversy.</p>
           </div>
 

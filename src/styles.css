@@ -614,13 +614,13 @@ a:focus-visible {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   width: min(100%, var(--content-max));
   margin: clamp(70px, 9vw, 130px) auto 0;
-  border-top: 1px solid var(--line-light);
+  border-top: 1px solid var(--ink);
 }
 
 .facts article {
   min-width: 0;
   padding: 30px clamp(20px, 3vw, 46px) 0 0;
-  border-right: 1px solid var(--line-light);
+  border-right: 1px solid var(--ink);
 }
 
 .facts article + article {

@@ -381,7 +381,7 @@ function App() {
 
         <section className="press" aria-labelledby="press-title">
           <div className="press-heading shell" data-reveal>
-            <h2 id="press-title">Empowering masses with what’s truth in media.</h2>
+            <h2 id="press-title">Empowering masses <br /> with what’s truth in media.</h2>
           </div>
           <div className="press-marquee" data-overflow-allowed>
             <div className="press-marquee__track">

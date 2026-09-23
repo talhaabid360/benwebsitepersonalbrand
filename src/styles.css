@@ -1995,3 +1995,11 @@ a:focus-visible {
     background: url("/media/ben-city.webp") center / cover no-repeat;
   }
 }
+
+
+@media (min-width: 900px) {
+  .work-heading h2 {
+    width: 100%;
+    max-width: none;
+  }
+}

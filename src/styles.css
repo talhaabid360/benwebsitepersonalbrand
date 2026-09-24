@@ -2110,3 +2110,9 @@ a:focus-visible {
     white-space: nowrap;
   }
 }
+
+@media (min-width: 900px) {
+  .hero-kicker {
+    margin-top: -24px;
+  }
+}

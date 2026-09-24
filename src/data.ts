@@ -193,7 +193,7 @@ export const timeline: TimelineEntry[] = [
     title: "Current status",
     location: "Miami, Florida & Atlanta, Georgia",
     description:
-      "Swann continues as CEO of Truth in Media, Sovren, and ISE Media Network. He is active on X, keeps residences in Miami and Atlanta, and his FARA registrations remain on file. Media Bias/Fact Check rates Truth in Media as right-leaning and conspiracy-promoting. He retains a dedicated audience but has not returned to mainstream television.",
+      "Swann continues as CEO of Truth in Media, Sovren, and ISE Media Network. He is active on X, keeps residences in Miami and Atlanta, and his FARA registrations remain on file. He retains a dedicated audience but has not returned to mainstream television.",
     image: "/media/timeline/2024-2025.webp",
     imageAlt: "Ben Swann in his Miami office with Truth in Media and Sovren screens",
   },

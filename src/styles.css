@@ -462,7 +462,8 @@ a:focus-visible {
 
 .hero-name__main {
   color: var(--paper);
-  text-shadow: 0 8px 54px rgba(0, 0, 0, 0.55);
+  /* text-shadow: 0 8px 54px rgba(0, 0, 0, 0.55); */
+  text-shadow: none;
 }
 
 .hero-name__echo {

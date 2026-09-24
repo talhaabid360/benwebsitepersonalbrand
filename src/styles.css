@@ -1716,6 +1716,10 @@ a:focus-visible {
     width: min(82vw, 410px);
   }
 
+  .intro-loader__mark img {
+    width: 85%;
+  }
+
   .site-header,
   .site-header--solid {
     height: 66px;

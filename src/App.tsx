@@ -595,7 +595,7 @@ function App() {
 
         <section className="portrait-break" aria-label="Ben Swann portrait">
           <div className="portrait-break__copy" data-reveal>
-            <p className="eyebrow">Journalist · Broadcaster · Founder</p>
+            
             <h2>
               Stand in the story.
               <br />

@@ -2116,3 +2116,9 @@ a:focus-visible {
     margin-top: -24px;
   }
 }
+
+@media (min-width: 900px) {
+  .story-portrait__ring {
+    top: 5%;
+  }
+}

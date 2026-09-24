@@ -618,7 +618,7 @@ a:focus-visible {
   z-index: 2;
   bottom: -3%;
   left: 50%;
-  width: 88%;
+  width: 98%;
   max-width: none;
   transform: translateX(-51%);
 }

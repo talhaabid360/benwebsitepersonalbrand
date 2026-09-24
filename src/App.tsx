@@ -201,6 +201,41 @@ function App() {
             );
           });
       });
+
+      desktop.add("(max-width: 899px)", () => {
+        gsap.fromTo(
+          ".story-portrait > img",
+          {yPercent: -2,},
+          {
+           yPercent: 2,
+           ease: "none",
+           scrollTrigger: {
+             trigger: ".story-portrait",
+             start: "top bottom",
+             end: "bottom top",
+            scrub: 1.2,
+           },
+          },
+        );
+      });
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
       return () => desktop.revert();
     }, rootRef);
 

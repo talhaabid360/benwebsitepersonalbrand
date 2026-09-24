@@ -1835,6 +1835,10 @@ a:focus-visible {
     line-height: 0.83;
   }
 
+  .press-marquee__track figure:nth-child(n + 19) {
+  display: none;
+  }
+
   .press-marquee__track {
   animation: mobile-logo-marquee 20s linear infinite;
   will-change: transform;
@@ -1859,7 +1863,7 @@ a:focus-visible {
     }
 
     to {
-      transform: translateX(-25%);
+      transform: translateX(-50%);
     }
  }
 

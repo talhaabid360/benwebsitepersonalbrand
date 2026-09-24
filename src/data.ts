@@ -87,12 +87,12 @@ export const timeline: TimelineEntry[] = [
     title: "Fox 19 and the birth of Reality Check",
     location: "Cincinnati, Ohio",
     description:
-      "At WXIX-TV (Fox 19), Swann co-anchored the evening news and launched Reality Check, a segment on issues other media was not covering. It drew tens of millions of YouTube views. Coverage included a praised 2012 interview with President Obama about his drone \"kill list,\" plus segments on the Federal Reserve and warrantless surveillance. The station rose to first place in the market.",
+      "At WXIX-TV, Swann co-anchored and launched Reality Check, covering overlooked issues. It drew tens of millions of YouTube views. Coverage included a praised 2012 interview with President Obama about his drone \"kill list,\" plus segments on the Federal Reserve and warrantless surveillance. ",
     image: "/media/timeline/2010-2013.webp",
     imageAlt: "Ben Swann at the Fox 19 news desk during the Reality Check years",
     quote: "You are the first journalist to get me to discuss this publicly.",
     quoteAttribution:
-      "President Barack Obama to Ben Swann, on the drone “kill list” policy, 2012",
+      "President Obama to Ben Swann, on the drone “kill list” policy, 2012",
   },
   {
     year: "2013",
@@ -135,7 +135,7 @@ export const timeline: TimelineEntry[] = [
     title: "Pizzagate segment",
     location: "Washington, D.C.",
     description:
-      "Swann aired a segment on the Pizzagate conspiracy theory, which claimed a Washington, D.C. pizza restaurant was tied to a child trafficking ring, and he called for a police investigation. Although management had approved the story, the backlash led CBS46 to suspend him and require that he take down the Truth in Media website and his social media accounts.",
+      "Swann aired a segment on the Pizzagate conspiracy, which claimed a Washington, pizza restaurant was tied to a child trafficking, and he called for a police investigation. Although management approved the story, the backlash led CBS46 to suspend him and order the removal of his Truth in Media website and social accounts.",
     image: "/media/timeline/jan-2017.webp",
     imageAlt: "Ben Swann presenting the January 2017 Reality Check segment",
     quote:

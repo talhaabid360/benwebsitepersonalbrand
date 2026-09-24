@@ -135,13 +135,13 @@ export const timeline: TimelineEntry[] = [
     title: "Pizzagate segment",
     location: "Washington, D.C.",
     description:
-      "Swann aired a segment on the Pizzagate conspiracy, which claimed a Washington, pizza restaurant was tied to a child trafficking, and he called for a police investigation. Although management approved the story, the backlash led CBS46 to suspend him and order the removal of his Truth in Media website and social accounts.",
+      "Swann aired a segment on the Pizzagate conspiracy, which claimed a Washington, pizza restaurant was tied to a child trafficking. Although management approved the story, the backlash led CBS46 to suspend him and order the removal of social accounts.",
     image: "/media/timeline/jan-2017.webp",
     imageAlt: "Ben Swann presenting the January 2017 Reality Check segment",
-    quote:
-      "Media is telling you the entire story is a hoax or fake news, but what does that even mean?",
-    quoteAttribution:
-      "Ben Swann on CBS46, questioning the debunking of the Pizzagate theory, January 2017",
+    // quote:
+    //   "Media is telling you the entire story is a hoax or fake news, but what does that even mean?",
+    // quoteAttribution:
+    //   "Ben Swann on CBS46, questioning the debunking of the Pizzagate theory, January 2017",
   },
   {
     year: "Jan 2018",

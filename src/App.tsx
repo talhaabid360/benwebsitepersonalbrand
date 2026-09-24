@@ -20,12 +20,12 @@ const youtubeUrl = "https://www.youtube.com/@TheBenSwann";
 function App() {
   const rootRef = useRef<HTMLDivElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
-  const mobileTimelineRef = useRef<HTMLDivElement>(null);
+  // const mobileTimelineRef = useRef<HTMLDivElement>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [introComplete, setIntroComplete] = useState(false);
   const [heroVideoReady, setHeroVideoReady] = useState(false);
   const [headerSolid, setHeaderSolid] = useState(false);
-  const [activeTimelineIndex, setActiveTimelineIndex] = useState(0);
+  // const [activeTimelineIndex, setActiveTimelineIndex] = useState(0);
 
   useEffect(() => {
     const reduceMotion = window.matchMedia(
@@ -250,34 +250,34 @@ function App() {
 
   const closeMenu = () => setMenuOpen(false);
 
-  const scrollMobileTimeline = (direction: 1 | -1) => {
-    const viewport = mobileTimelineRef.current;
-    if (!viewport) return;
-    viewport.scrollBy({
-      left: direction * viewport.clientWidth * 0.88,
-      behavior: "smooth",
-    });
-  };
+  // const scrollMobileTimeline = (direction: 1 | -1) => {
+  //   const viewport = mobileTimelineRef.current;
+  //   if (!viewport) return;
+  //   viewport.scrollBy({
+  //     left: direction * viewport.clientWidth * 0.88,
+  //     behavior: "smooth",
+  //   });
+  // };
 
-  const updateTimelineIndex = () => {
-    const viewport = mobileTimelineRef.current;
-    if (!viewport) return;
-    const cards = Array.from(
-      viewport.querySelectorAll<HTMLElement>(".timeline-mobile-card"),
-    );
-    const center = viewport.scrollLeft + viewport.clientWidth / 2;
-    let closest = 0;
-    let distance = Number.POSITIVE_INFINITY;
-    cards.forEach((card, index) => {
-      const cardCenter = card.offsetLeft + card.offsetWidth / 2;
-      const nextDistance = Math.abs(center - cardCenter);
-      if (nextDistance < distance) {
-        closest = index;
-        distance = nextDistance;
-      }
-    });
-    setActiveTimelineIndex(closest);
-  };
+  // const updateTimelineIndex = () => {
+  //   const viewport = mobileTimelineRef.current;
+  //   if (!viewport) return;
+  //   const cards = Array.from(
+  //     viewport.querySelectorAll<HTMLElement>(".timeline-mobile-card"),
+  //   );
+  //   const center = viewport.scrollLeft + viewport.clientWidth / 2;
+  //   let closest = 0;
+  //   let distance = Number.POSITIVE_INFINITY;
+  //   cards.forEach((card, index) => {
+  //     const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+  //     const nextDistance = Math.abs(center - cardCenter);
+  //     if (nextDistance < distance) {
+  //       closest = index;
+  //       distance = nextDistance;
+  //     }
+  //   });
+  //   setActiveTimelineIndex(closest);
+  // };
 
   return (
     <div ref={rootRef} className="site-shell">

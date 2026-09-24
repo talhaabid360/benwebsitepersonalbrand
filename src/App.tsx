@@ -518,7 +518,7 @@ function App() {
               See full timeline <ArrowRight aria-hidden="true" />
             </a>
           </div>
-          <div className="timeline-mobile" data-overflow-allowed>
+          {/* <div className="timeline-mobile" data-overflow-allowed>
             <div className="timeline-mobile__controls shell">
               <span>
                 {String(activeTimelineIndex + 1).padStart(2, "0")} / {timeline.length}
@@ -576,7 +576,56 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+
+       <div className="timeline-mobile" data-overflow-allowed>
+         <div className="timeline-mobile__viewport">
+           <div className="timeline-mobile__track">
+             <span className="timeline-mobile__line" aria-hidden="true" />
+
+             {timeline.map((entry, index) => (
+               <article
+                 className={`timeline-mobile-card ${
+                   index % 2 === 0
+                     ? "timeline-mobile-card--image-top"
+                     : "timeline-mobile-card--text-top"
+                 }`}
+                 key={`mobile-${entry.year}-${entry.title}`}
+               >
+                 <div className="timeline-mobile-card__image">
+                   <img
+                     src={entry.image}
+                     alt={entry.imageAlt}
+                     loading="lazy"
+                   />
+                 </div>
+
+                 <strong className="timeline-mobile-card__year">
+                   {entry.year}
+                 </strong>
+
+                 <div className="timeline-mobile-card__copy">
+                   <h3>{entry.title}</h3>
+
+                   <p className="timeline-card__location">
+                     <MapPin aria-hidden="true" /> {entry.location}
+                   </p>
+
+                  <p>{entry.description}</p>
+
+                  {entry.quote && (
+                    <blockquote>
+                      “{entry.quote}”
+                      <cite>{entry.quoteAttribution}</cite>
+                    </blockquote>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+         </div>
+       </div>
+       </section> 
 
         <section className="work" id="work">
           <div className="work-heading shell" data-reveal>

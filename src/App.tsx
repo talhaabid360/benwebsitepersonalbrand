@@ -1,6 +1,6 @@
 import {
   ArrowDown,
-  ArrowLeft,
+  // ArrowLeft,
   ArrowRight,
   ArrowUpRight,
   MapPin,

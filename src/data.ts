@@ -90,9 +90,9 @@ export const timeline: TimelineEntry[] = [
       "At WXIX-TV, Swann co-anchored and launched Reality Check to cover overlooked issues like the Federal Reserve and warrantless surveillance, drawing millions of YouTube views and featuring a praised 2012 interview with President Obama regarding his drone \"kill list,\". ",
     image: "/media/timeline/2010-2013.webp",
     imageAlt: "Ben Swann at the Fox 19 news desk ",
-    quote: "You are the first journalist to get me to discuss this publicly.",
-    quoteAttribution:
-      "President Obama to Ben, on the drone “kill list” policy, 2012",
+    // quote: "You are the first journalist to get me to discuss this publicly.",
+    // quoteAttribution:
+    //   "President Obama to Ben, on the drone “kill list” policy, 2012",
   },
   {
     year: "2013",

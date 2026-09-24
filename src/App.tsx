@@ -146,6 +146,27 @@ function App() {
             scrub: 0.8,
           },
         });
+
+        /* ADD IT HERE */
+        gsap.fromTo(
+          ".story-portrait > img",
+          {
+            yPercent: -4,
+          },
+          {
+            yPercent: 4,
+            ease: "none",
+            scrollTrigger: {
+              trigger: ".story-portrait",
+              start: "top bottom",
+              end: "bottom top",
+              scrub: 1.2,
+            },
+           },
+         );
+
+
+        
         gsap.fromTo(
           ".timeline-line__fill",
           { scaleY: 0 },

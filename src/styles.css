@@ -618,7 +618,7 @@ a:focus-visible {
   z-index: 2;
   bottom: -3%;
   left: 50%;
-  width: 122%;
+  width: 88%;
   max-width: none;
   transform: translateX(-51%);
 }
@@ -1209,7 +1209,7 @@ a:focus-visible {
   z-index: 2;
   bottom: -12%;
   left: 50%;
-  width: 115%;
+  width: 83%;
   max-width: none;
   transform: translateX(-50%);
   transition: transform 0.42s var(--ease-out);
@@ -1780,7 +1780,7 @@ a:focus-visible {
   }
 
   .story-portrait > img {
-    width: 136%;
+    width: 98%;
   }
 
   .story-portrait__caption {
@@ -1920,7 +1920,7 @@ a:focus-visible {
   }
 
   .watch-visual > img {
-    width: 130%;
+    width: 94%;
   }
 
   .watch-visual__play {

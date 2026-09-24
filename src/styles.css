@@ -2098,7 +2098,20 @@ a:focus-visible {
   }
 }
 
+/* @media (min-width: 900px) {
+  .portrait-break__copy h2 {
+    width: 100%;
+    max-width: none;
+    font-size: clamp(5rem, 10vw, 10rem);
+    white-space: nowrap;
+  }
+} */
+
 @media (min-width: 900px) {
+  .portrait-break {
+    min-height: 70svh;
+  }
+
   .portrait-break__copy h2 {
     width: 100%;
     max-width: none;

@@ -87,12 +87,12 @@ export const timeline: TimelineEntry[] = [
     title: "Fox 19 and the birth of Reality Check",
     location: "Cincinnati, Ohio",
     description:
-      "At WXIX-TV, Swann co-anchored and launched Reality Check, covering overlooked issues. It drew tens of millions of YouTube views. Coverage included a praised 2012 interview with President Obama about his drone \"kill list,\" plus segments on the Federal Reserve and warrantless surveillance. ",
+      "At WXIX-TV, Swann co-anchored and launched Reality Check to cover overlooked issues like the Federal Reserve and warrantless surveillance, drawing millions of YouTube views and featuring a praised 2012 interview with President Obama regarding his drone \"kill list,\". ",
     image: "/media/timeline/2010-2013.webp",
-    imageAlt: "Ben Swann at the Fox 19 news desk during the Reality Check years",
+    imageAlt: "Ben Swann at the Fox 19 news desk ",
     quote: "You are the first journalist to get me to discuss this publicly.",
     quoteAttribution:
-      "President Obama to Ben Swann, on the drone “kill list” policy, 2012",
+      "President Obama to Ben, on the drone “kill list” policy, 2012",
   },
   {
     year: "2013",

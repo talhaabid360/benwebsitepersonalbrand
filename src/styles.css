@@ -2150,4 +2150,8 @@ a:focus-visible {
   .press {
     padding-bottom: 0;
   }
+
+  .timeline-section {
+    background: var(--ink);
+  }
 }

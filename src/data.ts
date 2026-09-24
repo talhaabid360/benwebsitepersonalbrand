@@ -166,7 +166,7 @@ export const timeline: TimelineEntry[] = [
     title: "Registered as a foreign agent",
     location: "Washington, D.C.",
     description:
-      "Swann registered Rebel Media Productions LLC under the Foreign Agents Registration Act, disclosing an agreement with TV Novosti, the Russian government-backed owner of RT, to produce video content. He acknowledged that TV Novosti receives Russian state funding. Axios, Politico, and OpenSecrets covered his foreign-agent status.",
+      "Swann registered as a foreign agent to produce videos for the Russian state-funded TV Novosti, drawing coverage from Axios, Politico, and OpenSecrets.",
     image: "/media/timeline/aug-2022.webp",
     imageAlt: "Ben Swann at a news desk with a FARA registration timeline graphic",
   },

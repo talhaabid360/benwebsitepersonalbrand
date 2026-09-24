@@ -1806,10 +1806,13 @@ a:focus-visible {
   .story-portrait__caption strong {
     font-size: 1.8rem;
   }
-
+/* 
   .facts {
     grid-template-columns: minmax(0, 1fr);
     margin-top: 64px;
+  } */
+  .facts {
+  display: none;
   }
 
   .facts article,
@@ -1924,7 +1927,18 @@ a:focus-visible {
     object-position: 58% center;
   }
 
+  /* .portrait-break__copy h2 {
+    font-size: clamp(4.6rem, 20vw, 7rem);
+    line-height: 0.78;
+  } */
+
+  .portrait-break__copy {
+    text-align: left;
+  }
+
   .portrait-break__copy h2 {
+    max-width: 12ch;
+    margin-inline: 0;
     font-size: clamp(4.6rem, 20vw, 7rem);
     line-height: 0.78;
   }

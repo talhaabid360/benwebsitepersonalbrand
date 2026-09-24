@@ -743,12 +743,22 @@ a:focus-visible {
   animation: logo-marquee 42s linear infinite;
 }
 
-.press-marquee figure {
+/* .press-marquee figure {
   display: grid;
   flex: 0 0 clamp(230px, 23vw, 390px);
   height: clamp(150px, 15vw, 250px);
   margin: 0;
   padding: clamp(34px, 4vw, 64px);
+  border-right: 1px solid var(--line-dark);
+  place-items: center;
+} */
+
+.press-marquee figure {
+  display: grid;
+  flex: 0 0 clamp(230px, 23vw, 390px);
+  height: clamp(120px, 11vw, 170px);
+  margin: 0;
+  padding: clamp(18px, 2vw, 28px);
   border-right: 1px solid var(--line-dark);
   place-items: center;
 }

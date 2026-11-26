@@ -2383,26 +2383,29 @@ a:focus-visible {
     align-items: flex-start;
   }
 
-  .story-copy .story-headline {
-    max-width: none;
-    font-family: "Times New Roman", Times, serif;
-    font-size: clamp(1.75rem, 8cqi, 3.75rem);
-    font-weight: 400;
-    line-height: 1;
-    letter-spacing: -0.04em;
-  }
+.story-copy .story-headline {
+  max-width: none;
+  font-family: var(--display);
+  font-size: clamp(3.5rem, 5.5vw, 8rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
 
   .story-copy .story-headline span {
     display: block;
   }
 
   .story-copy .story-headline > .story-headline__detail {
-    margin: 0.35em 0 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    letter-spacing: inherit;
-  }
+  margin: 0.35em 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: inherit;
+  font-style: italic;
+  line-height: inherit;
+  letter-spacing: normal;
+  text-transform: none;
+}
 
   .story-grid .story-portrait {
     min-height: 0;

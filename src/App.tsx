@@ -307,6 +307,26 @@ useLayoutEffect(() => {
   //   setActiveTimelineIndex(closest);
   // };
 
+  const { width: introW, height: introH } = introSize;
+
+const introMobile = introW <= 640;
+
+const signatureWidth = Math.min(
+  introW * (introMobile ? 0.70 : 0.42),
+  410,
+);
+
+const signatureHeight = signatureWidth * 0.34;
+
+const signatureCenterY = introH * 0.49;
+
+const signatureX = (introW - signatureWidth) / 2;
+
+const signatureY =
+  signatureCenterY - signatureHeight / 2;
+
+const signatureOrigin = `${introW / 2}px ${signatureCenterY}px`;
+
   return (
     <div ref={rootRef} className="site-shell">
       <div className="page-progress" ref={progressRef} aria-hidden="true" />

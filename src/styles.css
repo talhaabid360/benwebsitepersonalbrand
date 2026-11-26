@@ -2556,3 +2556,30 @@ a:focus-visible {
     transition: none;
   }
 }
+
+
+/* Watch section — YouTube and Podcast buttons */
+
+.watch-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 38px;
+}
+
+.watch-actions .primary-button {
+  margin-top: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .watch-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .watch-actions .primary-button {
+    width: 100%;
+  }
+}

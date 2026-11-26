@@ -2355,7 +2355,7 @@ a:focus-visible {
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
   .story-copy .story-headline {
     max-width: none;
   }

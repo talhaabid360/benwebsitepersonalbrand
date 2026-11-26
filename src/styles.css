@@ -2358,7 +2358,7 @@ a:focus-visible {
 @media (min-width: 900px) {
   .story-copy .story-headline {
     max-width: none;
-    font-size: clamp(3.5rem, 6.5vw, 8rem);
+    font-size: clamp(3.5rem, 5.5vw, 8rem);
   }
 
   .story-headline > span {

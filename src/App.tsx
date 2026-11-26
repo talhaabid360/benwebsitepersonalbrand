@@ -11,7 +11,9 @@ import {
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { gallery, pressLogos, timeline } from "./data";
+// import { gallery, pressLogos, timeline } from "./data";
+import { gallery, pressLogos, timeline, companies } from "./data";
+
 
 gsap.registerPlugin(ScrollTrigger);
 

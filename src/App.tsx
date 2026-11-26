@@ -711,9 +711,25 @@ function App() {
                 Reporting, investigations, analysis and conversations from Ben
                 Swann’s official YouTube channel.
               </p>
-              <a className="primary-button" href={youtubeUrl} target="_blank" rel="noreferrer">
-                Visit the channel <ArrowUpRight aria-hidden="true" />
-              </a>
+              <div className="watch-actions">
+  <a
+    className="primary-button"
+    href={youtubeUrl}
+    target="_blank"
+    rel="noreferrer"
+  >
+    Visit the channel <ArrowUpRight aria-hidden="true" />
+  </a>
+
+  <a
+    className="primary-button"
+    href="https://sonsdaughterspodcast.com/"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Podcast <ArrowUpRight aria-hidden="true" />
+  </a>
+</div>
             </div>
             <a
               className="watch-visual"

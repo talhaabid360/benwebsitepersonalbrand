@@ -2417,4 +2417,142 @@ a:focus-visible {
   }
 }
 
+/* ========================================
+   COMPANIES SECTION
+======================================== */
 
+.companies {
+  padding: clamp(80px, 8vw, 140px) 0;
+  background: var(--paper);
+  color: var(--ink);
+  scroll-margin-top: 78px;
+}
+
+/* Main headline */
+
+.companies-heading {
+  margin-bottom: clamp(32px, 3vw, 48px);
+}
+
+.companies-heading h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(4rem, 7vw, 8rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 0.88;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.companies-heading h2 span {
+  display: block;
+}
+
+/* Founder & CEO */
+
+.companies-role {
+  margin: 0 0 24px;
+  font-family: var(--body);
+  font-size: clamp(1.1rem, 1.6vw, 1.8rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* Nine companies in one horizontal row */
+
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  gap: 10px;
+}
+
+/* Equal-sized cards */
+
+.company-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  aspect-ratio: 1.15 / 1;
+  padding: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(5, 5, 5, 0.25);
+  border-radius: 12px;
+  background: transparent;
+
+  transition:
+    background-color 350ms var(--ease-out),
+    border-color 350ms var(--ease-out);
+}
+
+/* Perfectly centered logos */
+
+.company-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 350ms var(--ease-out);
+}
+
+/* Golden hover */
+
+@media (hover: hover) and (pointer: fine) {
+  .company-card:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+  }
+
+  .company-card:hover img {
+    transform: scale(1.06);
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 1099px) {
+  .companies-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .company-card {
+    aspect-ratio: 1.6 / 1;
+    padding: 24px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 640px) {
+  .companies {
+    padding: 80px 0;
+  }
+
+  .companies-heading h2 {
+    font-size: clamp(3rem, 10vw, 5rem);
+    line-height: 0.9;
+  }
+
+  .companies-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .company-card {
+    aspect-ratio: 1 / 1;
+    padding: 12px;
+    border-radius: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .company-card,
+  .company-card img {
+    transition: none;
+  }
+}

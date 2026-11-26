@@ -1436,7 +1436,7 @@ a:focus-visible {
 .timeline-page__hero-image {
   object-fit: contain;
   object-position: center bottom;
-  transform: scale(0.9);
+  transform: scale(0.95);
   transform-origin: center bottom;
 }
 

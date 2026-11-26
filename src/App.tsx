@@ -402,13 +402,14 @@ function App() {
           <div className="story-grid">
             <div className="story-copy" data-reveal>
               <p className="eyebrow">01 — The story</p>
-              <h2 className="story-headline">
-                <span>From newsrooms to</span>{" "}
-                <span>independent media:</span>{" "}
-                <span className="story-headline__detail">
-                  A career built on asking the questions others wouldn’t.
-                </span>
-              </h2>
+            <h2 className="story-headline">
+  <span>From newsrooms to</span>{" "}
+  <span>independent media:</span>{" "}
+  <span className="story-headline__detail">
+    <span>A career built on asking</span>{" "}
+    <span>the questions others wouldn’t.</span>
+  </span>
+</h2>
               <p className="story-lede">
                 For more than two decades, Ben Swann has moved through local
                 newsrooms, national broadcasts, and independent media, building a

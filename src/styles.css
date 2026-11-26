@@ -2583,3 +2583,41 @@ a:focus-visible {
     width: 100%;
   }
 }
+
+
+
+
+
+
+/* Mobile hero subtitle alignment */
+
+@media (max-width: 699px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-name {
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+  }
+
+  .hero-kicker {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 8px;
+    text-align: center;
+    white-space: normal;
+    font-size: clamp(0.58rem, 2.6vw, 0.68rem);
+    letter-spacing: 0.13em;
+    line-height: 1.8;
+  }
+
+  .hero-kicker__separator {
+    display: none;
+  }
+
+  .hero-kicker__second {
+    display: block;
+  }
+}

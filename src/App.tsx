@@ -402,9 +402,11 @@ function App() {
           <div className="story-grid">
             <div className="story-copy" data-reveal>
               <p className="eyebrow">01 — The story</p>
-              <h2>
-                FROM NEWSROOMS TO INDEPENDENT MEDIA: A CAREER BUILT
-                ON ASKING THE QUESTIONS OTHERS WOULDN’T. 
+              <h2 className="story-headline">
+                <span>From newsrooms to</span>{" "}
+                <span>independent media: a career</span>{" "}
+                <span>built on asking the</span>{" "}
+                <span>questions others wouldn’t.</span>
               </h2>
               <p className="story-lede">
                 For more than two decades, Ben Swann has moved through local

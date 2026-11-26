@@ -25,6 +25,12 @@ function App() {
   // const mobileTimelineRef = useRef<HTMLDivElement>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [introComplete, setIntroComplete] = useState(false);
+  const introRef = useRef<HTMLDivElement>(null);
+
+  const [introSize, setIntroSize] = useState(() => ({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  }));
   const [heroVideoReady, setHeroVideoReady] = useState(false);
   const [headerSolid, setHeaderSolid] = useState(false);
   // const [activeTimelineIndex, setActiveTimelineIndex] = useState(0);

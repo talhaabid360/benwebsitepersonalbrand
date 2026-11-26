@@ -1368,7 +1368,7 @@ a:focus-visible {
   backdrop-filter: none;
 }
 
-.timeline-page__back {
+/* .timeline-page__back {
   display: inline-flex;
   align-items: center;
   gap: 9px;
@@ -1382,6 +1382,34 @@ a:focus-visible {
 
 .timeline-page__back svg {
   width: 18px;
+} */
+
+
+.timeline-page__back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 0 24px;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition:
+    background-color 0.25s var(--ease-out),
+    color 0.25s var(--ease-out);
+}
+
+.timeline-page__back svg {
+  width: 18px;
+  color: currentColor;
+  transition: transform 0.25s var(--ease-out);
 }
 
 .timeline-page__hero {
@@ -1455,7 +1483,7 @@ a:focus-visible {
 
 /* Bright desktop hover */
 
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {
   .timeline-more__button:hover {
     background: var(--gold);
     color: var(--ink);
@@ -1466,7 +1494,28 @@ a:focus-visible {
   .timeline-page__back:hover {
     color: var(--gold);
   }
+} */
+
+/* Bright desktop hover */
+
+@media (hover: hover) and (pointer: fine) {
+  .timeline-more__button:hover {
+    background: var(--gold);
+    color: var(--ink);
+    box-shadow: 0 0 34px rgba(243, 214, 107, 0.62);
+    transform: translateY(-3px);
+  }
+
+  .timeline-page__back:hover {
+    background: var(--gold);
+    color: var(--ink);
+  }
+
+  .timeline-page__back:hover svg {
+    transform: translateX(-3px);
+  }
 }
+
 
 /* Keep the new homepage button desktop-only */
 

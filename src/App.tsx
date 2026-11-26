@@ -46,6 +46,26 @@ function App() {
     return () => window.clearTimeout(timer);
   }, []);
 
+useLayoutEffect(() => {
+  const element = introRef.current;
+  if (!element) return;
+
+  const updateSize = () => {
+    setIntroSize({
+      width: element.clientWidth,
+      height: element.clientHeight,
+    });
+  };
+
+  updateSize();
+
+  const observer = new ResizeObserver(updateSize);
+  observer.observe(element);
+
+  return () => observer.disconnect();
+}, []);
+  
+
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") setMenuOpen(false);

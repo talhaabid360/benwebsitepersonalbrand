@@ -1,9 +1,53 @@
+// import { ArrowDown, ArrowLeft, MapPin } from "lucide-react";
+// import { timeline } from "./data";
+
+// function TimelinePage() {
+//   return (
+
 import { ArrowDown, ArrowLeft, MapPin } from "lucide-react";
+import { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { timeline } from "./data";
 
+gsap.registerPlugin(ScrollTrigger);
+
 function TimelinePage() {
+  const rootRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    if (!rootRef.current) return;
+
+    const desktop = gsap.matchMedia();
+
+    desktop.add(
+      "(min-width: 900px) and (prefers-reduced-motion: no-preference)",
+      () => {
+        gsap.fromTo(
+          ".timeline-line__fill",
+          { scaleY: 0 },
+          {
+            scaleY: 1,
+            ease: "none",
+            scrollTrigger: {
+              trigger: ".timeline-desktop",
+              start: "top 52%",
+              end: "clamp(bottom 52%)",
+              scrub: true,
+            },
+          },
+        );
+      },
+      rootRef,
+    );
+
+    ScrollTrigger.refresh();
+
+    return () => desktop.revert();
+  }, []);
+
   return (
-    <div className="site-shell timeline-page">
+   <div ref={rootRef} className="site-shell timeline-page">
       <header className="site-header timeline-page__header">
         <a className="site-brand" href="/" aria-label="Ben Swann home">
           <img

@@ -2355,3 +2355,18 @@ a:focus-visible {
 }
 
 
+@media (min-width: 900px) {
+  .story-copy {
+    container-type: inline-size;
+  }
+
+  .story-copy .story-headline {
+    max-width: none;
+    font-size: min(8.2cqi, 4rem);
+    line-height: 0.95;
+  }
+
+  .story-headline > span {
+    display: block;
+  }
+}

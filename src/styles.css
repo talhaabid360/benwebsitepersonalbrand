@@ -1352,13 +1352,20 @@ a:focus-visible {
 
 /* Full timeline page */
 
-.timeline-page__header {
+/* .timeline-page__header {
   border-color: transparent;
   background: linear-gradient(
     180deg,
     rgba(5, 5, 5, 0.72),
     transparent
   );
+} */
+
+.timeline-page__header {
+  background: var(--ink);
+  border-bottom: none;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .timeline-page__back {

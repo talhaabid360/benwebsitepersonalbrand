@@ -390,7 +390,7 @@ function App() {
                 Ben Swann
               </h1>
             </div>
-            <p className="hero-kicker">Journalist · Broadcaster · Founder</p>
+            <p className="hero-kicker">Journalist · Broadcaster · Founder . Entrepreneur & a Father </p>
           </div>
           <a className="hero-scroll-cue" href="#story">
             <span>Enter the story</span>

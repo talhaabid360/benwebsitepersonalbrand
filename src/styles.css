@@ -1428,9 +1428,16 @@ a:focus-visible {
   height: 100%;
 }
 
-.timeline-page__hero-image {
+/* .timeline-page__hero-image {
   object-fit: cover;
   object-position: center;
+} */
+
+.timeline-page__hero-image {
+  object-fit: contain;
+  object-position: center bottom;
+  transform: scale(0.9);
+  transform-origin: center bottom;
 }
 
 .timeline-page__hero-shade {

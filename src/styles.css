@@ -1121,7 +1121,7 @@ a:focus-visible {
 
 .portrait-break__copy {
   width: min(calc(100% - (2 * var(--gutter))), var(--content-max));
-  text-align: center;
+  text-align: left;
 }
 
 .portrait-break__copy .eyebrow {

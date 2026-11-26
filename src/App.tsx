@@ -331,7 +331,7 @@ const signatureOrigin = `${introW / 2}px ${signatureCenterY}px`;
     <div ref={rootRef} className="site-shell">
       <div className="page-progress" ref={progressRef} aria-hidden="true" />
 
-      <div
+      {/* <div
         className={`intro-loader ${introComplete ? "intro-loader--complete" : ""}`}
         aria-hidden="true"
       >
@@ -353,7 +353,109 @@ const signatureOrigin = `${introW / 2}px ${signatureCenterY}px`;
             Journalist · Broadcaster · Founder
           </span>
        </div>
-      </div>
+      </div> */}
+
+<div
+  ref={introRef}
+  className={`intro-loader ${
+    introComplete ? "intro-loader--complete" : ""
+  }`}
+  aria-hidden="true"
+>
+  <svg
+    className="intro-fly__layer"
+    viewBox={`0 0 ${introW} ${introH}`}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <filter
+        id="intro-signature-filter"
+        colorInterpolationFilters="sRGB"
+      >
+        <feColorMatrix
+          type="matrix"
+          values="
+            -1.5 0 0 0 1
+            -1.5 0 0 0 1
+            -1.5 0 0 0 1
+             0   0 0 1 0
+          "
+        />
+      </filter>
+
+      <mask
+        id="intro-signature-mask"
+        maskUnits="userSpaceOnUse"
+        x="0"
+        y="0"
+        width={introW}
+        height={introH}
+        style={{ maskType: "luminance" }}
+      >
+        <rect
+          width={introW}
+          height={introH}
+          fill="white"
+        />
+
+        <g
+          className="intro-fly__cut"
+          style={{ transformOrigin: signatureOrigin }}
+        >
+          <image
+            href="/media/ben-swann-signature.webp"
+            x={signatureX}
+            y={signatureY}
+            width={signatureWidth}
+            height={signatureHeight}
+            filter="url(#intro-signature-filter)"
+            preserveAspectRatio="xMidYMid meet"
+          />
+        </g>
+      </mask>
+    </defs>
+
+    <rect
+      className="intro-fly__matte"
+      width={introW}
+      height={introH}
+      fill="#000000"
+      mask="url(#intro-signature-mask)"
+    />
+
+    <g
+      className="intro-fly__signature"
+      style={{ transformOrigin: signatureOrigin }}
+    >
+      <image
+        href="/media/ben-swann-signature.webp"
+        x={signatureX}
+        y={signatureY}
+        width={signatureWidth}
+        height={signatureHeight}
+        preserveAspectRatio="xMidYMid meet"
+      />
+    </g>
+  </svg>
+
+  <div
+    className="intro-fly__details"
+    style={{
+      top: signatureY + signatureHeight + 20,
+    }}
+  >
+    <div className="intro-fly__progress">
+      <span />
+    </div>
+
+    <span className="intro-fly__tagline">
+      Journalist · Broadcaster · Founder
+    </span>
+  </div>
+</div>
+
+
+      
 
       <header className={`site-header ${headerSolid ? "site-header--solid" : ""}`}>
         <a className="site-brand" href="#home" aria-label="Ben Swann home">

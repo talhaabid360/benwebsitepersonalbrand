@@ -422,10 +422,7 @@ function App() {
                 alt="Ben Swann"
                 fetchPriority="high"
               />
-              <span className="story-portrait__caption">
-                <strong>Truth</strong>
-                <small>Without permission</small>
-              </span>
+             
             </div>
           </div>
           <div className="facts" data-reveal>

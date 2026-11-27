@@ -246,24 +246,6 @@ useLayoutEffect(() => {
           },
         );
       });
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
       return () => desktop.revert();
     }, rootRef);
 
@@ -277,36 +259,6 @@ useLayoutEffect(() => {
   }, []);
 
   const closeMenu = () => setMenuOpen(false);
-
-  // const scrollMobileTimeline = (direction: 1 | -1) => {
-  //   const viewport = mobileTimelineRef.current;
-  //   if (!viewport) return;
-  //   viewport.scrollBy({
-  //     left: direction * viewport.clientWidth * 0.88,
-  //     behavior: "smooth",
-  //   });
-  // };
-
-  // const updateTimelineIndex = () => {
-  //   const viewport = mobileTimelineRef.current;
-  //   if (!viewport) return;
-  //   const cards = Array.from(
-  //     viewport.querySelectorAll<HTMLElement>(".timeline-mobile-card"),
-  //   );
-  //   const center = viewport.scrollLeft + viewport.clientWidth / 2;
-  //   let closest = 0;
-  //   let distance = Number.POSITIVE_INFINITY;
-  //   cards.forEach((card, index) => {
-  //     const cardCenter = card.offsetLeft + card.offsetWidth / 2;
-  //     const nextDistance = Math.abs(center - cardCenter);
-  //     if (nextDistance < distance) {
-  //       closest = index;
-  //       distance = nextDistance;
-  //     }
-  //   });
-  //   setActiveTimelineIndex(closest);
-  // };
-
   const { width: introW, height: introH } = introSize;
 
 const introMobile = introW <= 640;
@@ -330,30 +282,6 @@ const signatureOrigin = `${introW / 2}px ${signatureCenterY}px`;
   return (
     <div ref={rootRef} className="site-shell">
       <div className="page-progress" ref={progressRef} aria-hidden="true" />
-
-      {/* <div
-        className={`intro-loader ${introComplete ? "intro-loader--complete" : ""}`}
-        aria-hidden="true"
-      >
-        <div className="intro-loader__panel intro-loader__panel--left" />
-        <div className="intro-loader__panel intro-loader__panel--right" />
-        <div className="intro-loader__mark">
-          <img
-            src="/media/ben-swann-signature.webp"
-            alt=""
-            fetchPriority="high"
-            decoding="sync"
-          />
-
-          <div className="intro-loader__progress" aria-hidden="true">
-            <span />
-          </div>
-
-          <span className="intro-loader__tagline">
-            Journalist · Broadcaster · Founder
-          </span>
-       </div>
-      </div> */}
 
 <div
   ref={introRef}
@@ -453,9 +381,6 @@ const signatureOrigin = `${introW / 2}px ${signatureCenterY}px`;
     </span>
   </div>
 </div>
-
-
-      
 
       <header className={`site-header ${headerSolid ? "site-header--solid" : ""}`}>
         <a className="site-brand" href="#home" aria-label="Ben Swann home">
@@ -672,65 +597,6 @@ const signatureOrigin = `${introW / 2}px ${signatureCenterY}px`;
               See full timeline <ArrowRight aria-hidden="true" />
             </a>
           </div>
-          {/* <div className="timeline-mobile" data-overflow-allowed>
-            <div className="timeline-mobile__controls shell">
-              <span>
-                {String(activeTimelineIndex + 1).padStart(2, "0")} / {timeline.length}
-              </span>
-              <div>
-                <button
-                  type="button"
-                  aria-label="Previous timeline event"
-                  onClick={() => scrollMobileTimeline(-1)}
-                >
-                  <ArrowLeft aria-hidden="true" />
-                </button>
-                <button
-                  type="button"
-                  aria-label="Next timeline event"
-                  onClick={() => scrollMobileTimeline(1)}
-                >
-                  <ArrowRight aria-hidden="true" />
-                </button>
-              </div>
-            </div>
-            <div
-              className="timeline-mobile__viewport"
-              ref={mobileTimelineRef}
-              onScroll={updateTimelineIndex}
-            >
-              <div className="timeline-mobile__track">
-                {timeline.map((entry, index) => (
-                  <article
-                    className="timeline-mobile-card"
-                    key={`mobile-${entry.year}-${entry.title}`}
-                  >
-                    <span className="timeline-mobile-card__number">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <strong className="timeline-mobile-card__year">{entry.year}</strong>
-                    <div className="timeline-mobile-card__image">
-                      <img src={entry.image} alt={entry.imageAlt} loading="lazy" />
-                    </div>
-                    <div className="timeline-mobile-card__copy">
-                      <h3>{entry.title}</h3>
-                      <p className="timeline-card__location">
-                        <MapPin aria-hidden="true" /> {entry.location}
-                      </p>
-                      <p>{entry.description}</p>
-                      {entry.quote && (
-                        <blockquote>
-                          “{entry.quote}”
-                          <cite>{entry.quoteAttribution}</cite>
-                        </blockquote>
-                      )}
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section> */}
 
        <div className="timeline-mobile" data-overflow-allowed>
          <div className="timeline-mobile__viewport">
@@ -815,9 +681,6 @@ const signatureOrigin = `${introW / 2}px ${signatureCenterY}px`;
   </div>
 </section>
 
-
-
-
          <section className="portrait-break" aria-label="Ben Swann portrait">
           <div className="portrait-break__copy" data-reveal>
             
@@ -829,13 +692,6 @@ const signatureOrigin = `${introW / 2}px ${signatureCenterY}px`;
           </div>
         </section>
 
-
-
-
-
-
-
-        
         <section className="work" id="work">
           <div className="work-heading shell" data-reveal>
             <p className="eyebrow">03 — In the room</p>
@@ -850,8 +706,6 @@ const signatureOrigin = `${introW / 2}px ${signatureCenterY}px`;
             ))}
           </div>
         </section>
-
-       
 
         <section className="watch" id="watch">
           <div className="watch-grid shell">

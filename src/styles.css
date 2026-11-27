@@ -104,116 +104,6 @@ a:focus-visible {
   transform-origin: left center;
 }
 
-/* .intro-loader {
-  position: fixed;
-  z-index: 950;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  pointer-events: none;
-}
-
-.intro-loader__panel {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50.2%;
-  background: #000;
-  transition: transform 1.15s var(--ease-in-out) 0.1s;
-}
-
-.intro-loader__panel--left {
-  left: 0;
-  transform-origin: left;
-}
-
-.intro-loader__panel--right {
-  right: 0;
-  transform-origin: right;
-}
-
-.intro-loader__mark {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 18px;
-  width: min(42vw, 410px);
-  transition: opacity 0.35s ease, transform 0.6s var(--ease-out);
-}
-
-/* .intro-loader__mark img {
-  width: 100%;
-}
-
-.intro-loader__mark span {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-} */
-
-
-/* .intro-loader__mark img {
-  width: 100%;
-  opacity: 0;
-  animation: intro-logo-in 0.5s var(--ease-out) 0.05s forwards;
-}
-
-.intro-loader__progress {
-  width: 78%;
-  height: 1px;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.intro-loader__progress span {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  transform: scaleX(0);
-  transform-origin: left center;
-  animation: intro-line-load 2.1s var(--ease-in-out) 0.35s forwards;
-}
-
-.intro-loader__tagline {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-}
-
-@keyframes intro-logo-in {
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes intro-line-load {
-  to {
-    transform: scaleX(1);
-  }
-}
-
-
-.intro-loader--complete .intro-loader__panel--left {
-  transform: translateX(-101%);
-}
-
-.intro-loader--complete .intro-loader__panel--right {
-  transform: translateX(101%);
-}
-
-.intro-loader--complete .intro-loader__mark {
-  opacity: 0;
-  transform: scale(0.96);
-} */ 
-
-
 /* ========================================
    SIGNATURE FLY-THROUGH INTRO
 ======================================== */
@@ -475,12 +365,6 @@ a:focus-visible {
     display: none;
   }
 }
-
-
-
-
-
-
 
 .site-header {
   position: fixed;
@@ -1004,16 +888,6 @@ a:focus-visible {
   animation: logo-marquee 42s linear infinite;
 }
 
-/* .press-marquee figure {
-  display: grid;
-  flex: 0 0 clamp(230px, 23vw, 390px);
-  height: clamp(150px, 15vw, 250px);
-  margin: 0;
-  padding: clamp(34px, 4vw, 64px);
-  border-right: 1px solid var(--line-dark);
-  place-items: center;
-} */
-
 .press-marquee figure {
   display: grid;
   flex: 0 0 clamp(230px, 23vw, 390px);
@@ -1114,19 +988,6 @@ a:focus-visible {
   box-shadow: 0 0 0 1px var(--gold), 0 0 26px rgba(232, 189, 61, 0.62);
   transform: translate(-50%, -50%);
 }
-
-/* .timeline-card__year {
-  position: absolute;
-  z-index: 0;
-  top: 18%;
-  left: 50%;
-  color: rgba(232, 189, 61, 0.14);
-  font-family: var(--display);
-  font-size: clamp(6rem, 12vw, 13rem);
-  line-height: 0.76;
-  white-space: nowrap;
-  transform: translateX(-50%);
-} */
 
 .timeline-card__year { position: absolute; z-index: 2; top: 0; left: 50%; color: rgba(232, 189, 61, 0.14); font-family: var(--display); font-size: clamp(6rem, 12vw, 13rem); line-height: 0.76; white-space: nowrap; transform: translate(-50%, -50%); }
 
@@ -1275,14 +1136,6 @@ a:focus-visible {
   line-height: 0.8;
 }
 
-/* .gallery {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: clamp(14px, 1.6vw, 28px);
-  width: min(calc(100% - (2 * var(--gutter))), var(--content-max));
-  margin-inline: auto;
-} */
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1291,34 +1144,6 @@ a:focus-visible {
   margin-inline: auto;
 }
 
-/* .gallery-item {
-  position: relative;
-  margin: 0;
-  overflow: hidden;
-  background: #111;
-}
-
-.gallery-item--1 {
-  grid-column: 1 / span 7;
-  aspect-ratio: 1.55;
-}
-
-.gallery-item--2 {
-  grid-column: 8 / -1;
-  aspect-ratio: 1.1;
-  margin-top: 14%;
-}
-
-.gallery-item--3 {
-  grid-column: 1 / span 5;
-  aspect-ratio: 1.08;
-  margin-top: 10%;
-}
-
-.gallery-item--4 {
-  grid-column: 6 / -1;
-  aspect-ratio: 1.55;
-} */
 .gallery-item {
   position: relative;
   margin: 0;
@@ -1619,40 +1444,12 @@ a:focus-visible {
   width: 19px;
 }
 
-/* Full timeline page */
-
-/* .timeline-page__header {
-  border-color: transparent;
-  background: linear-gradient(
-    180deg,
-    rgba(5, 5, 5, 0.72),
-    transparent
-  );
-} */
-
 .timeline-page__header {
   background: var(--ink);
   border-bottom: none;
   box-shadow: none;
   backdrop-filter: none;
 }
-
-/* .timeline-page__back {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  min-height: 44px;
-  color: var(--paper);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.timeline-page__back svg {
-  width: 18px;
-} */
-
 
 .timeline-page__back {
   display: inline-flex;
@@ -1696,11 +1493,6 @@ a:focus-visible {
   width: 100%;
   height: 100%;
 }
-
-/* .timeline-page__hero-image {
-  object-fit: cover;
-  object-position: center;
-} */
 
 .timeline-page__hero-image {
   object-fit: contain;
@@ -1758,23 +1550,6 @@ a:focus-visible {
   scroll-margin-top: 72px;
 }
 
-/* Bright desktop hover */
-
-/* @media (hover: hover) and (pointer: fine) {
-  .timeline-more__button:hover {
-    background: var(--gold);
-    color: var(--ink);
-    box-shadow: 0 0 34px rgba(243, 214, 107, 0.62);
-    transform: translateY(-3px);
-  }
-
-  .timeline-page__back:hover {
-    color: var(--gold);
-  }
-} */
-
-/* Bright desktop hover */
-
 @media (hover: hover) and (pointer: fine) {
   .timeline-more__button:hover {
     background: var(--gold);
@@ -1793,7 +1568,6 @@ a:focus-visible {
   }
 }
 
-
 /* Keep the new homepage button desktop-only */
 
 @media (max-width: 899px) {
@@ -1801,9 +1575,6 @@ a:focus-visible {
     display: none;
   }
 }
-
-
-
 
 @media (hover: hover) and (pointer: fine) {
   .desktop-nav a:hover {
@@ -2445,15 +2216,6 @@ a:focus-visible {
   }
 }
 
-/* @media (min-width: 900px) {
-  .portrait-break__copy h2 {
-    width: 100%;
-    max-width: none;
-    font-size: clamp(5rem, 10vw, 10rem);
-    white-space: nowrap;
-  }
-} */
-
 @media (min-width: 900px) {
   .portrait-break {
     min-height: 70svh;
@@ -2852,11 +2614,6 @@ a:focus-visible {
     width: 100%;
   }
 }
-
-
-
-
-
 
 /* Mobile hero subtitle alignment */
 

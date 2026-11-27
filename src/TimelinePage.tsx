@@ -1,9 +1,3 @@
-// import { ArrowDown, ArrowLeft, MapPin } from "lucide-react";
-// import { timeline } from "./data";
-
-// function TimelinePage() {
-//   return (
-
 import { ArrowDown, ArrowLeft, MapPin } from "lucide-react";
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
